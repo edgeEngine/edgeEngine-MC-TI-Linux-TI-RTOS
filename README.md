@@ -234,7 +234,7 @@ edgeEngine for TI Linux Platform
 
 ### Installation Guide
 **1.** Download latest release [HERE](https://github.com/edgeEngine/edgeEngine-MC-TI-Linux-TI-RTOS/releases)
-**2.** Create new directory
+**2.** Create a new directory
 **3.** Move package to newly created directory 
 **4.** Open terminal and navigate to the newly created directory that now has the downloaded .tar file
 **5.** *Untar package (ex:)
@@ -245,7 +245,7 @@ tar xvf edgeEngine-ti-linux-v3.0.0.tar
 ```
 ./start.sh
 ```
-**7.** Please visit https://developer.mimik.com and create your account and get more information
+**7.** Please visit [Developer Console](https://developer.mimik.com/console/create_account) to create an account and get started with your projects
 
 #### NOTE:
 - A directory may be made after untaring. Navigate into that directory to find `start.sh` script 
