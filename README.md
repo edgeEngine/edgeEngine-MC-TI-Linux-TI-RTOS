@@ -1,6 +1,8 @@
 # edgeEngine-MC-TI-Linux-TI-RTOS
 
-# Hybrid edge cloud binaries for j721e (TI Jacinto 7 processor platform)
+## Hybrid edge cloud binaries for j721e (TI Jacinto 7 processor platform)
+
+## About:
 
 ### Overview:
 
