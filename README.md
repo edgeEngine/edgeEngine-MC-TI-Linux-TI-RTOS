@@ -2,9 +2,16 @@
 
 ## Hybrid edge cloud binaries for j721e (TI Jacinto 7 processor platform)
 
+## Before you start  
+
+ [explore the developer resources & documentation](https://developer.mimik.com)
+ 
+ [sign up and create a mimik developer console account](https://developer.mimik.com/console/create_account)
+
+
 ## About:
 
-### Overview:
+### Overview
 
 This repository provides a pair of ELF objects -- an edge main as executable
 and an edgechild (as static library) for Texas Instruments Jacinto 7 platform: j721e.
