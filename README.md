@@ -11,7 +11,7 @@
 
 ## About:
 
-### Overview
+### Overview:
 
 This repository provides a pair of ELF objects -- an edge main as executable
 and an edgechild (as static library) for Texas Instruments Jacinto 7 platform: j721e.
@@ -19,10 +19,10 @@ and an edgechild (as static library) for Texas Instruments Jacinto 7 platform: j
 edge main running in A72 Linux dynamically deploys and pass on -- as requested
 by user --, wasm microservice requests to edgechild running in R5F rtos at core
 MCU2_0. edgechild, upon receiving the image or using previous deployed image,
-will execute the wasm microservice in R5F rtos. Both edge parent in A72 Linux
+will execute the wasm microservice in R5F rtos. Both edge main in A72 Linux
 and edgechild in R5F uses low-level TI inter processor communication facility
 (IPC) to exchange wasm image data and mimik RPC protocol packets. edgechild in
-R5F and edge parent in A72 uses IPC port 16 for communication.
+R5F and edge main in A72 uses IPC port 16 for communication.
 
 This repository contains the following:
 
@@ -80,8 +80,10 @@ Edit mcu2_0/concerto.mak and add the following lines for the definition of
 mimik_main() by including edgechild.lib
 (Look at the diff changes given below to help with making the changes easily)
 
+```c
 LDIRS += $(VISION_APPS_PATH)/platform/$(SOC)/rtos/mcu2_0/
 STATIC_LIBS += edgechild
+```
 
 ```shell
 gedit /home/user1/TiJacinto7/ti-processor-sdk-rtos-j721e-evm-08_02_00_05/vision_apps/platform/j721e/rtos/mcu2_0/concerto.mak
@@ -243,7 +245,7 @@ edgeEngine for TI Linux Platform
 
 ### Installation Guide
 **1.** Download latest release [HERE](https://github.com/edgeEngine/edgeEngine-MC-TI-Linux-TI-RTOS/releases)
-**2.** Create a new directory
+**2.** Create new directory
 **3.** Move package to newly created directory 
 **4.** Open terminal and navigate to the newly created directory that now has the downloaded .tar file
 **5.** *Untar package (ex:)
@@ -254,7 +256,7 @@ tar xvf edgeEngine-ti-linux-v3.0.0.tar
 ```
 ./start.sh
 ```
-**7.** Please visit [Developer Console](https://developer.mimik.com/console/create_account) to create an account and get started with your projects
+**7.** Please visit https://developer.mimik.com and create your account and get more information
 
 #### NOTE:
 - A directory may be made after untaring. Navigate into that directory to find `start.sh` script 
